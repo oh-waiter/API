@@ -16,6 +16,7 @@ import jakarta.persistence.ManyToOne;
 @Builder
 public class Mesa {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long mesaID;

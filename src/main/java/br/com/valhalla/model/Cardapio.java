@@ -15,6 +15,7 @@ import lombok.Data;
 
 public class Cardapio {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cardapioID;
