@@ -1,35 +1,32 @@
 package br.com.valhalla.model;
 
-
 import jakarta.persistence.Entity;
-import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
 
 @Entity
 @Data
-@Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 
-
-public class Cliente {
+public class Categorias {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long clienteID;
+    private Long categoriaID;
 
-    @Column(name = "NomeCliente", nullable = false, length = 100)
-    private String nomeCliente;
-
-    @Column(name = "CPFCliente", nullable = false, length = 20)
-    private String CPFCliente;
-
+    private String nomeCategoria;
+    @OneToMany(mappedBy = "categoria")
+    private List<Cardapio> cardapios;
 
 }
