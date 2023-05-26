@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OhWaiterApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(OhWaiterApplication.class, args);
 	}
 
