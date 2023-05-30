@@ -1,10 +1,6 @@
-package br.com.valhalla.model;
-
-import java.util.List;
+package br.com.valhalla.OhWaiter.model;
 
 import jakarta.persistence.*;
-;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -26,7 +22,7 @@ public class Categorias {
     private Long categoriaID;
 
     private String nomeCategoria;
-    @OneToMany(mappedBy = "categoria")
+    @OneToMany(mappedBy = "categorias")
     private List<Cardapio> cardapios;
 
 }

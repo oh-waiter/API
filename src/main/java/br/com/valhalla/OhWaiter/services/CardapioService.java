@@ -1,15 +1,15 @@
-package br.com.valhalla.services;
+package br.com.valhalla.OhWaiter.services;
 
 
-import java.util.List;
-
+import br.com.valhalla.OhWaiter.model.Cardapio;
+import br.com.valhalla.OhWaiter.repository.CardapioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.ResourceAccessException;
 
-import br.com.valhalla.model.Cardapio;
-import br.com.valhalla.repository.CardapioRepository;
+import java.util.List;
 
+@Service
 public class CardapioService {
 
     private CardapioRepository cardapioRepository;
