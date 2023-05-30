@@ -1,8 +1,8 @@
-package br.com.valhalla.resource.DTO;
+package br.com.valhalla.OhWaiter.resource.DTO;
+
+import br.com.valhalla.OhWaiter.model.Categorias;
 
 import java.io.Serializable;
-
-import br.com.valhalla.model.Categorias;
 
 public class CategoriasDTO implements Serializable {
     private static final long serialVersionUID = 1L;

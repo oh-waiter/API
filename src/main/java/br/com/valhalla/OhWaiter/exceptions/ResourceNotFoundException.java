@@ -1,4 +1,4 @@
-package br.com.valhalla.exceptions;
+package br.com.valhalla.OhWaiter.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

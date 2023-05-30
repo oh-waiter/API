@@ -1,17 +1,17 @@
-package br.com.valhalla.services;
+package br.com.valhalla.OhWaiter.services;
 
 
+import br.com.valhalla.OhWaiter.exceptions.ObjectNotFoundException;
+import br.com.valhalla.OhWaiter.exceptions.ResourceNotFoundException;
+import br.com.valhalla.OhWaiter.model.Categorias;
+import br.com.valhalla.OhWaiter.repository.CategoriasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import br.com.valhalla.model.Categorias;
-import br.com.valhalla.repository.CategoriasRepository;
-import br.com.valhalla.exceptions.ObjectNotFoundException;
-import br.com.valhalla.exceptions.ResourceNotFoundException;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-
+@Service
 public class CategoriasService {
 
     @Autowired

@@ -1,4 +1,4 @@
-package br.com.valhalla.exceptions;
+package br.com.valhalla.OhWaiter.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException{
 
